@@ -1,3 +1,7 @@
+//Romero Pizano Christian Gustavo 
+//Practica 2
+//No. de cuenta: 319225596
+//Fecha de entrega: 22 de agosto del 2025
 #include<iostream>
 
 //#define GLEW_STATIC
