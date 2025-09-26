@@ -1,3 +1,18 @@
-﻿  Main_Modelado.cpp
-LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+﻿  Carga de Modelos.cpp
+C:\Users\jiraf\source\repos\ConfigInicial\ConfigInicial\Carga de Modelos.cpp(117,30): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\jiraf\source\repos\ConfigInicial\ConfigInicial\Carga de Modelos.cpp(242,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\jiraf\source\repos\ConfigInicial\ConfigInicial\Carga de Modelos.cpp(243,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\jiraf\source\repos\ConfigInicial\ConfigInicial\Carga de Modelos.cpp(247,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\jiraf\source\repos\ConfigInicial\ConfigInicial\Carga de Modelos.cpp(248,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\jiraf\source\repos\ConfigInicial\ConfigInicial\Carga de Modelos.cpp(250,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\jiraf\source\repos\ConfigInicial\ConfigInicial\Carga de Modelos.cpp(251,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+  Microsoft (R) Incremental Linker Version 14.44.35215.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  "/OUT:C:\Users\jiraf\source\repos\ConfigInicial\Debug\ConfigInicial.exe" /VERBOSE /INCREMENTAL "/ILK:Debug\ConfigInicial.ilk" "/LIBPATH:C:\Users\jiraf\source\repos\ConfigInicial\/External Libraries/GLFW/lib-vc2015" "/LIBPATH:C:\Users\jiraf\source\repos\ConfigInicial\/External Libraries/assimp/lib" "/LIBPATH:C:\Users\jiraf\source\repos\ConfigInicial\/External Libraries/SOIL2/lib" "/LIBPATH:C:\Users\jiraf\source\repos\ConfigInicial\/External Libraries/GLEW/lib/Release/Win32" opengl32.lib glew32.lib glfw3.lib "assimp-vc140-mt.lib" "soil2-debug.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST "/MANIFESTUAC:level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG "/PDB:C:\Users\jiraf\source\repos\ConfigInicial\Debug\ConfigInicial.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT "/IMPLIB:C:\Users\jiraf\source\repos\ConfigInicial\Debug\ConfigInicial.lib" /MACHINE:X86 "Debug\Carga de Modelos.obj" 
+  LINK : hay 0 módulos nuevos y 1 (de 72) módulos modificados desde la vinculación anterior
+  Generando una imagen que no sea SAFESEH.
+  Iniciando el paso 2
+       Carga de Modelos.obj
+       MSVCRTD.lib(loadcfg.obj)
+  Paso 2 finalizado
   ConfigInicial.vcxproj -> C:\Users\jiraf\source\repos\ConfigInicial\Debug\ConfigInicial.exe
