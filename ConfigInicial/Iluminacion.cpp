@@ -182,6 +182,8 @@ int main()
     Model meteoro((char*)"Models/meteoro/tripo_convert_542cf2d3-fa56-472a-8408-9e70cc4b0083.obj");
     Model satelite((char*)"Models/satelite/tripo_convert_69d018bb-23a1-4f4b-b19b-fd2c46ff5283.obj");
     Model planeta((char*)"Models/planeta/tripo_convert_5d7e7989-6038-49c7-8a54-9b04bf3d3b4d.obj");
+    Model lampara((char*)"Models/lampara/tripo_convert_6597b068-dc77-4586-ad38-803f2d8cb77e.obj");
+    Model sol((char*)"Models/sol/tripo_convert_6597b068-dc77-4586-ad38-803f2d8cb77e.obj");
 
     glm::mat4 projection = glm::perspective(camera.GetZoom(), (float)SCREEN_WIDTH / (float)SCREEN_HEIGHT, 0.1f, 100.0f);
 
@@ -384,19 +386,33 @@ int main()
         glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(coheteModel));
         cohete.Draw(lightingShader);
 
-        // Dibujar planeta
+        // planeta
         glm::mat4 planetaModel(1.0f);
         planetaModel = glm::translate(planetaModel, glm::vec3(0.0f, 0.3f, -6.5f));
         planetaModel = glm::scale(planetaModel, glm::vec3(1.1f, 1.1f, 1.1f));
         glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(planetaModel));
         planeta.Draw(lightingShader);
 
-        // Dibujar meteoro
+        // meteoro
         glm::mat4 meteoroModel(1.0f);
         meteoroModel = glm::translate(meteoroModel, glm::vec3(1.5f, 1.5f, -5.0f));
         meteoroModel = glm::scale(meteoroModel, glm::vec3(1.4f, 1.4f, 1.4f));
         glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(meteoroModel));
         meteoro.Draw(lightingShader);
+
+        // lampara
+        glm::mat4 lampModel(1.0f);
+        lampModel = glm::translate(lampModel, glm::vec3(1.3f, 1.3f, -0.5f));
+        lampModel = glm::scale(lampModel, glm::vec3(1.4f, 1.4f, 1.4f));
+        glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(lampModel));
+        lampara.Draw(lightingShader);
+
+        // sol
+        glm::mat4 solModel(1.0f);
+        solModel = glm::translate(solModel, glm::vec3(1.3f, 1.3f, -0.5f));
+        solModel = glm::scale(solModel, glm::vec3(1.4f, 1.4f, 1.4f));
+        glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(solModel));
+        sol.Draw(lightingShader);
 
 
         //glDrawArrays(GL_TRIANGLES, 0, 36);
